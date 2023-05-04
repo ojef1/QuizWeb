@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono&family=Roboto:wght@300;400;700&family=Rowdies&family=Shantell+Sans&display=swap');
+
+/*Gerais*/
+header{
+    background-color: #fff;
+    text-align: center;
+}
+
+body{
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); 
+    font-family: Roboto;
+    height: 100vh;
+    text-shadow: 1px 1px 4px #666666;
+}
+h1,h2,h3,h4,h5{
+    font-family: Rowdies;
+    text-shadow: none;
+}
+button[type="submit"]{
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    transition: ease-in-out .5s; 
+}
+button[type="submit"]:hover{
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #B721FF 0%, #21D4FD 100%); 
+    scale: 1.03;
+}
+#listaPerguntas a{
+    text-decoration: none;
+}
+/*corpo*/
+#header{
+    margin-left: 3rem;
+}
+#container-corpo{
+    background-color: #fff9f9;
+    margin-top: 3rem;
+    height: 75vh;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: 3px 3px 5px #000;
+}
+
+#titulo{
+    margin-left: 30%;
+    margin-bottom: 5rem;
+}
+/*barra preta separando as colunas*/
+#divisor{
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); 
+    height: 75vh;
+    width: 20px;
+    box-shadow: inset 2px 0px 5px #000;
+}
+/*seção das perguntas*/
+#listaPerguntas{
+    gap: 30px;
+    text-align: center;
+}
+.active{
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); 
+    box-shadow: 2px 2px 5px #B721FF!important;
+    
+}
+#perguntas{
+    padding-left: 50px;
+    width: 60%;
+    text-align: center; 
+}
+.pergunta2, .pergunta3, .pergunta4, .pergunta5{
+    display: none;
+}
+#perguntas h4{
+    margin-bottom: 5rem;
+}
+#perguntas .form-check{
+    text-align: start;
+}
+#perguntas h1{
+    margin-left: 0;
+}
+#perguntas button{
+    margin-top: 5rem;
+}
+.form-check-input{
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); 
+}
+.form-check-input:checked{
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #fcfcfc 0%, #21F4FD 100%); 
+    box-shadow: 0px 0px 10px #21f4fd;
+}
+
+/*dialog*/
+dialog{
+    border: none;
+    border-radius: 1rem;
+    box-shadow:  #0077d8 2px 2px 5px;
+    margin: auto; 
+    user-select: none;
+    text-align: center;
+}
+dialog::backdrop{
+    background-color: rgba(0, 0, 0, 0.822);
+}
+dialog img {
+    width: 5rem;
+    margin-bottom: 3rem;
+}
+#respostas ul{
+    padding: 0;
+    list-style: none;
+    font-weight: bold;
+}
+.dialog button{
+    margin: 3rem;
+}
+.col-md-4{text-align: center;margin: auto;}
+#titleResultado{
+    width: fit-content;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.certo, #qtdCertas{
+    font-size: 25px;
+    color: #00da00;
+    filter: drop-shadow(0px 5px 4px #136100);
+}
+.errado, #qtdErradas{
+    font-size: 25px;
+    color: #cf0000;
+    filter: drop-shadow(0px 5px 4px #5c0000);
+}
+.btReiniciar{
+    margin-top: 3rem;
+}
+
+/*footer*/
+/*copy*/
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+#copy-area{background-color: #fff9f9;}
+#copy-area .container{
+    padding: 10px 0;
+    text-align: center;
+}
+#copy-area .container p{margin-bottom: 0;}
+#copy-area .container a{
+    font-weight: bold;
+    color: #444;
+    text-decoration: none;
+}
+#copy-area .container a:hover{color: #3ec1d5;}
+

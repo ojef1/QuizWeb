@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!--css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivo.css">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/9661a7fefd.js" crossorigin="anonymous"></script>
+    <!--Titulo-->
+    <title>WebQuiz</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar bg-body-tertiray">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" id="header">
+                    <img src="img/logo.jpg" alt="logo" width="30 " height="24" class="d-inline-block align-text-top">
+                    WebQuiz
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container" id="container-corpo">
+            <div class="row">
+                <div class="col-md-4" >
+                    <h1 id="titulo">Perguntas</h1>
+                    <div class="list-group" id="listaPerguntas" >
+                        <a href="#perguntas"><button type="button"class="btPergunta list-group-item list-group-item-action active" aria-current="true">Primeira pergunta</button></a>
+                        <a href="#perguntas"><button type="button"class="btPergunta list-group-item list-group-item-action">Segunda pergunta</button></a>
+                        <a href="#perguntas"><button type="button"class="btPergunta list-group-item list-group-item-action">Terceira pergunta</button></a>
+                        <a href="#perguntas"><button type="button"class="btPergunta list-group-item list-group-item-action">Quarta pergunta</button></a>
+                        <a href="#perguntas"><button type="button"class="btPergunta list-group-item list-group-item-action">Quinta pergunta</button></a>   
+                    </div>
+                </div>
+                
+                <div class="col-md-4" id="divisor"></div>
+                <div class="col-md-4" id="perguntas">
+                    <div class="pergunta1">
+                        <h1 id="titulo">Questão 1</h1>
+                        <h4>Normalmente, quantos litros de sangue uma pessoa tem? Em média, quantos são retirados numa doação de sangue?</h4>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pergunta1" id="pg1-op" value="A">
+                            <label class="form-check-label" for="pg1-op">A ) Tem entre 2 a 4 litros. São retirados 450 mililitros</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pergunta1" id="pg1-op" value="B">
+                            <label class="form-check-label" for="pg1-op">B ) Tem entre 4 a 6 litros. São retirados 450 mililitros</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pergunta1" id="pg1-op" value="C">
+                            <label class="form-check-label" for="pg1-op">C ) Tem 10 litros. São retirados 2 litros</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pergunta1" id="pg1-op" value="D">
+                            <label class="form-check-label" for="pg1-op">D ) Tem 7 litros. São retirados 1,5 litros</label>
+                        </div>
+                        <div class="col-12">
+                            <button class="btConfirmar btn btn-primary" type="submit">Confirmar</button>
+                          </div>
+                    </div>
+                    <div class="pergunta2">
+                        <h1 id="titulo">Questão 2</h1>
+                        <h4>De quem é a famosa frase “Penso, logo existo”?</h4>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pergunta2" id="pg2-op" value="A" >
+                            <label class="form-check-label" for="pg2-op" value="">A ) Platão</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pergunta2" id="pg2-op" value="B" >
+                            <label class="form-check-label" for="pg2-op" value="">B ) Galileu Galilei</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input correta" type="radio" name="pergunta2" id="pg2-op" value="C" >
+                            <label class="form-check-label" for="pg2-op" value="">C ) Descartes</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pergunta2" id="pg2-op" value="D" >
+                            <label class="form-check-label" for="pg2-op" value="">D ) Sócrates</label>
+                        </div>
+                        <div class="col-12">
+                            <button class="btConfirmar btn btn-primary" type="submit">Confirmar</button>
+                          </div>
+                    </div>
+                    <div class="pergunta3" >
+                        <h1 id="titulo">Questão 3</h1>
+                        <h4>De onde é a invenção do chuveiro elétrico?</h4>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pergunta3" id="pg3-op" value="A" >
+                            <label class="form-check-label" for="pg3-op">A ) França</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pergunta3" id="pg3-op" value="B" >
+                            <label class="form-check-label" for="pg3-op">B ) Inglaterra</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input correta" type="radio" name="pergunta3" id="pg3-op" value="C" >
+                            <label class="form-check-label" for="pg3-op">C ) Brasil</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pergunta3" id="pg3-op" value="D" >
+                            <label class="form-check-label" for="pg3-op">D ) Austrália</label>
+                        </div>
+                        <div class="col-12">
+                            <button class="btConfirmar btn btn-primary" type="submit">Confirmar</button>
+                          </div>
+                    </div>
+                    <div class="pergunta4" >
+                        <h1 id="titulo">Questão 4</h1>
+                        <h4>Quais o menor e o maior país do mundo?</h4>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pergunta4" id="pg4-op" value="A" >
+                            <label class="form-check-label" for="pg4-op">A ) Vaticano e Rússia</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pergunta4" id="pg4-op" value="B" >
+                            <label class="form-check-label" for="pg4-op">B ) Nauru e China</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pergunta4" id="pg4-op" value="C" >
+                            <label class="form-check-label" for="pg4-op">C ) Mônaco e Canadá</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pergunta4" id="pg4-op" value="D" >
+                            <label class="form-check-label" for="pg4-op">D ) Malta e Estados Unidos</label>
+                        </div>
+                        <div class="col-12">
+                            <button class="btConfirmar btn btn-primary" type="submit">Confirmar</button>
+                          </div>
+                    </div>
+                    <div class="pergunta5" >
+                        <h1 id="titulo">Questão 5</h1>
+                        <h4>Qual o grupo em que todas as palavras foram escritas corretamente?</h4>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pergunta5" id="pg5-op" value="A">
+                            <label class="form-check-label" for="pg5-op">A ) Asterístico, beneficiente, meteorologia, entertido</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pergunta5" id="pg5-op" value="B" >
+                            <label class="form-check-label" for="pg5-op">B ) Asterisco, beneficente, meteorologia, entretido</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pergunta5" id="pg5-op" value="C" >
+                            <label class="form-check-label" for="pg5-op">C ) Asterisco, beneficente, metereologia, entretido</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pergunta5" id="pg5-op" value="D" >
+                            <label class="form-check-label" for="pg5-op">D ) Asterístico, beneficiente, metereologia, entretido</label>
+                        </div>
+                        <div class="col-12">
+                            <button class="btFinalizar btn btn-primary" type="submit" onclick="armazenarRespostas()">Finalizar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dialog">
+            <dialog id="modal">
+                <h2>Você Finalizou as Perguntas!</h2>
+                <img src="img/logo.jpg">
+                <h3>Suas Respostas: </h3>
+                <div id="respostas"></div>
+                <div class="modal-footer">
+                    <button type="button" id="fecharModal" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+                    <button type="button" id="mostrarResultados" class="btn btn-primary">Ver resultado</button>
+                </div>
+            </dialog>
+        </div>
+        <div class="modalResultado">
+            <dialog id="modalResultado">
+                <div class="modal-body">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-4" id="titleResultado"></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-4"><h5>Quantidade de acertos:</h5><br><span id="qtdCertas"></span></div>
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4"><h5>Quantidade de Erros:</h5><br><span id="qtdErradas"></span></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12">
+                            <button class="btReiniciar btn btn-primary" type="submit" >Reiniciar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+            </dialog>
+        </div>
+        <footer>
+            <div id="copy-area">
+                <div class="container footer">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>Desenvolvido por <a href="https://jeffersonsantos.vercel.app" target="_blank">Jefferson Santos</a>&copy;2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!--javascript-->
+    <script src="script.js"></script>
+</body>
+</html>

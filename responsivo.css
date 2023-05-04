@@ -1,0 +1,62 @@
+@media screen and (max-width: 767px){
+    /*gerais*/
+    body{
+        background-repeat: no-repeat;
+        height: 200vh;
+    }
+    
+    /*header*/
+    #header{margin-left: 0;text-align: center;width: 100%;}
+
+    /*corpo*/
+    #titulo{
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+        margin-top: 2rem;
+    }    
+    #container-corpo{
+        background-color: #fff9f9;
+        margin-top: 3rem;
+        width: 90vw;
+        height: 155%;
+        border-radius: 1rem 1rem 0 0;
+        box-shadow: 3px 3px 5px #000;
+    }
+    #divisor{display: none;}
+    #perguntas{
+        border-top: #000 solid 3px;
+        margin-top: 12rem;
+        padding: 0;
+        width: 70vw;
+    }
+    button[type="submit"]{
+        margin-bottom: 3rem;
+    }
+
+    /*dialog*/
+    .modal-footer button{
+        width: 100%;
+    }
+
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+    #titulo{
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 2rem;
+    }    
+    #container-corpo{
+        margin-top: 2rem;
+        height: 80vh;
+    }
+    #divisor{
+        margin: 0;
+        height: 80vh;
+    }
+    #perguntas button{
+        margin-top: 4rem;
+    }
+}
+@media screen and (min-width: 1024px){}
